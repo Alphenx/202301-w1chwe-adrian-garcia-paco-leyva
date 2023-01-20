@@ -1,0 +1,23 @@
+{
+  "name": "202301-w1chwe-adrian-garcia-paco-leyva",
+  "version": "1.0.0",
+  "description": "Travellian challenge by Paco and Adrian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alphenx/202301-w1chwe-adrian-garcia-paco-leyva.git"
+  },
+  "author": "Paco y Adrian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alphenx/202301-w1chwe-adrian-garcia-paco-leyva/issues"
+  },
+  "homepage": "https://github.com/Alphenx/202301-w1chwe-adrian-garcia-paco-leyva#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
