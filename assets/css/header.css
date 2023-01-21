@@ -1,0 +1,36 @@
+body {
+  background-color: bisque;
+}
+.nav-bar {
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: aqua;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar__home {
+  width: 50%;
+}
+.nav-bar__menu__img-burguer img {
+  position: relative;
+}
+
+.nav-bar__menu__list ul {
+  display: none;
+}
+
+.nav-bar__menu__input:checked ~ ul {
+  list-style: none;
+  display: block;
+}
+
+.nav-bar__menu__list li a {
+  text-decoration: none;
+}
+
+.nav-bar__menu__input {
+  display: none;
+}
