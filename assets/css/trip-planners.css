@@ -2,7 +2,7 @@
 
 .section-trip-planners {
   max-width: 1440px;
-  margin: 10rem auto;
+  margin: 10rem auto 20rem;
   position: relative;
 }
 
@@ -32,6 +32,8 @@
 .section-trip-planners__nav-arrows-container {
   display: flex;
   gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-trip-planners__nav-arrows-container button {
@@ -62,7 +64,7 @@
   border-radius: 12px;
   font-weight: 400;
   position: absolute;
-  bottom: -15rem;
+  bottom: -22rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -70,6 +72,7 @@
 .section-trip-planners__cities-card-container {
   display: flex;
   gap: 2rem;
+  margin: 7rem 0;
 }
 
 .cities-card-container__city-card-container {
@@ -167,6 +170,10 @@
 
 @media (max-width: 425px) {
   /* TRIP PLANNERS - SECTION */
+
+  .section-trip-planners {
+    margin: 0 auto;
+  }
 
   .section-trip-planners__title-container h2 {
     font-size: 2.5rem;
