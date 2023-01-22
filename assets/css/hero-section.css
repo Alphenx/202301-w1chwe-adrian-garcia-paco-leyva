@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+}
+
+.box__hero-section {
+  width: 100%;
+  height: 1210px;
+  background-image: url(/assets/img/landscape-background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.hero-section {
+  padding-top: 15rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hero-section-list {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.hero-section__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.7rem;
+  color: white;
+  max-width: 35rem;
+}
+
+.hero-section__caption {
+  width: 80%;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hero-section__info {
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  background-color: white;
+  width: 80%;
+}
+
+.hero-section__book-now {
+  border-radius: 0 0 1rem 1rem;
+  background-color: #ff7757;
+  padding: 2rem;
+  width: 80%;
+}
+
+.hero-section__info .info__list {
+  margin: 1rem;
+  text-align: left;
+}
+
+.info__list {
+  width: 100%;
+}
+
+.info__list li {
+  padding-right: 1rem;
+  border-bottom: 1px solid #172432;
+  margin: 1rem;
+  width: 60%;
+}
+
+.info__list li .title-item {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info__list li .info-item {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.hero-section__book-now li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-section__book-now li p {
+  font-size: 2rem;
+
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  color: white;
+}
+
+.hero-section__book-now li span img {
+  width: 1.5rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 778px) {
+  .hero-section-list .hero-section__info ul {
+    display: flex;
+  }
+  .hero-section-list {
+    margin-top: 10rem;
+    display: flex;
+  }
+  .hero-section__info {
+    border-radius: 0;
+  }
+  .hero-section__book-now {
+    border-radius: 0 1rem 1rem 0;
+    width: 20%;
+  }
+
+  .check_info {
+    margin-right: 2rem;
+  }
+
+  .hero-section {
+    padding-top: 18rem;
+  }
+}
