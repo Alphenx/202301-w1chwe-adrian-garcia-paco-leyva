@@ -97,6 +97,8 @@ main {
 }
 
 @media (max-width: 425px) {
+  /* SECCION - BLOG */
+
   /* flex - container */
   .section-blog__blog-content {
     flex-wrap: wrap;

@@ -1,23 +1,152 @@
+/* TRIP PLANNERS - SECTION */
+
+.section-trip-planners {
+  max-width: 1440px;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.section-trip-planners__title-container {
+  width: 100%;
+  margin: 1.5rem 0 2rem 0;
+  position: relative;
+}
+
+.section-trip-planners__title-container h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.section-trip-planners__title-container hr {
+  width: 14.4rem;
+  margin: 0.5rem 0 2rem 0;
+  border: 2px solid #ff7757;
+}
+
+.section-trip-planners__subtitle-container {
+  display: flex;
+  align-items: center;
+}
+
+.section-trip-planners__nav-arrows-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.section-trip-planners__nav-arrows-container button {
+  padding: 1.25rem 1.75rem;
+  background-color: #172432;
+  border-radius: 12px;
+  border: none;
+}
+
+.section-trip-planners__nav-arrows-container button + button {
+  background-color: #ff7757;
+}
+
+.section-trip-planners__title-container p {
+  font-family: "Rubik", sans-serif;
+  color: #767e86;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.section-trip-planners__btn {
+  padding: 1.25rem;
+  margin-bottom: 5rem;
+  font-size: 1.125rem;
+  color: white;
+  background-color: #ff7757;
+  border: none;
+  border-radius: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: -15rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-trip-planners__cities-card-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.cities-card-container__city-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.cities-card-container__city-card-container img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.cities-card-container__city-card-container:hover {
+  top: -40px;
+}
+
+.cities-card-container__city-card-container:hover > figcaption {
+  position: absolute;
+  bottom: -180px;
+  display: block;
+}
+
+.city-card-container__caption-container {
+  width: 100%;
+  margin: 1.5rem 0;
+  display: none;
+}
+
+.caption-container__price-container {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 1.25rem 0;
+}
+
+.city-card-container__caption-container h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+}
+
+.caption-container__info-container {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
 /* STARS STYLES */
 
 .info-container__stars-container {
   float: left;
-  height: 46px;
-  padding: 0 10px;
+
+  align-items: center;
 }
+
 .info-container__stars-container:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
+
 .info-container__stars-container:not(:checked) > label {
   float: right;
   width: 1em;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 1.5rem;
   color: #ccc;
 }
+
 .info-container__stars-container:not(:checked) > label:before {
   content: "★ ";
 }
@@ -34,4 +163,48 @@
 .info-container__stars-container > input:checked ~ label:hover ~ label,
 .info-container__stars-container > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+@media (max-width: 425px) {
+  /* TRIP PLANNERS - SECTION */
+
+  .section-trip-planners__title-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-trip-planners__title-container p {
+    font-size: 1rem;
+  }
+
+  .section-trip-planners__btn {
+    transform: translate(0%, 0%);
+    position: initial;
+  }
+
+  .section-trip-planners__nav-arrows-container,
+  .section-trip-planners__title-container input {
+    display: none;
+  }
+
+  .cities-card-container__city-card-container {
+    flex-wrap: wrap;
+  }
+
+  .city-card-container__caption-container {
+    display: block;
+  }
+
+  .section-trip-planners__cities-card-container {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .section-trip-planners__cities-card-container img {
+    height: 55%;
+    object-fit: cover;
+  }
+
+  .city-card-container__caption-container {
+    margin: 0;
+  }
 }
