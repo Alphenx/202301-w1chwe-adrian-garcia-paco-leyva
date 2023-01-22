@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travellian landing page</title>
 
-  <link rel="stylesheet" href="./assets/css/resets.css">
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/fonts.css">
@@ -22,12 +21,125 @@
 </head>
 
 <body>
-  <header>
+  <header class="nav-bar">
+    <img class="nav-bar__home" src="./assets/img/logo-travellian-white.svg" alt="logo-travellian-home">
+    <nav class="nav-bar__menu">
+      <label class="nav-bar__menu__img-burguer" for="burguer-buttom-menu"><img src="./assets/img/burguer-button.svg"
+          alt="Menu" title="menu"></label>
 
+      <div class="nav-bar__menu__list">
+        <input class="nav-bar__menu__input" type="checkbox" name="menu" id="burguer-buttom-menu">
+        <ul class="list-links">
+          <div class="list-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+          </div>
+          <div class="list-log">
+            <li><a href="#">Login</a></li>
+            <li class="list-log__sing-up"><a href="#">Sign up</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
+    <section class="box__hero-section">
+      <div class="hero-section">
+        <p class="hero-section__title">Start your unforgettable journey with us.</p>
+        <figcaption class="hero-section__caption">The best travel for your journey begins now</figcaption>
 
 
+        <div class="hero-section-list">
+          <div class="hero-section__info">
+            <ul class="info__list">
+              <li>
+                <p class="title-item">DESTINATION</p>
+                <p class="info-item">Dubai</p>
+              </li>
+              <li>
+                <p class="title-item">PERSON</p>
+                <p class="info-item">2</p>
+              </li>
+              <li>
+                <p class="title-item">CHECK IN</p>
+                <p class="info-item">SUN, 17th Sep 2020</p>
+              </li>
+              <li>
+                <p class="title-item">CHECK OUT</p>
+                <p class="info-item">Tue, 17th Oct 2020</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-section__book-now">
+            <ul>
+              <li class="info__list-check">
+                <p class="check-info">Book Now</p>
+                <span><img src="./assets/img/large-arrow-white.svg" alt="arrow-go-book-no"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+    
+    <section class="destinations">
+      <div class="destinations__title">
+        <div class="title-section">
+          <p>Popular Destinations</p>
+          <hr>
+
+        </div>
+        <div class="block-carrusel">
+          <figcaption>Most popular destinations around the world, from historical places
+            to natural wonders</figcaption>
+          <div class="button-section">
+            <img class="button-section__black" src="/assets/img/arrow-left-direction-white.svg"
+              alt="arrow-left-direction">
+            <img class="button-section__orange" src="/assets/img/arrow_rigth-direction-white.svg"
+              alt="arrow-right-direction">
+          </div>
+        </div>
+      </div>
+      <div class="destinations__locations">
+        <figure class="block-destination">
+          <img src="/assets/img/monument-of-berlin.jpg" alt="Monument of Berlin">
+          <p class="block-destination__title">Monument of Berlin
+            <span class="subtitle">
+              <img src="/assets/img/location-white.svg" alt="icon-location">
+              Berlin, Germany
+            </span>
+          </p>
+        </figure>
+
+        <figure class="block-destination block-destination_none">
+          <img src="/assets/img/millenium-brige.jpg" alt="Millenium brige London">
+          <p class="block-destination__title">Millenium Bridge
+            <span class="subtitle">
+              <img src="/assets/img/location-white.svg" alt="icon-location">
+              London, United Kingdom
+            </span>
+          </p>
+        </figure>
+
+        <figure class="block-destination block-destination_none">
+          <img src="/assets/img/rialto-bridge.jpg" alt="Rialto Bridge Venice">
+          <p class="block-destination__title">Rialto Bridge
+            <span class="subtitle">
+              <img src="/assets/img/location-white.svg" alt="icon-location">
+              Venice, Italy
+            </span>
+          </p>
+        </figure>
+      </div>
+
+    </section>
+    
     <section class="section-blog">
       <div class="section-blog__title-container">
         <h2>Our Blog</h2>
@@ -269,6 +381,12 @@
   <footer>
 
   </footer>
+  </main>
+  <footer>
+
+  </footer>
+
 </body>
 
 </html>
+
