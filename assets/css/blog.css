@@ -23,7 +23,7 @@ main {
 
 .section-blog__title-container h2 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 500;
 }
 
@@ -36,7 +36,7 @@ main {
 .section-blog__title-container p {
   font-family: "Rubik", sans-serif;
   color: #767e86;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -63,14 +63,14 @@ main {
 
 .blog-content__text-container h3 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.4rem;
   font-weight: 500;
   margin: 2rem 0;
 }
 
 .blog-content__text-container p {
   font-family: "Rubik", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 3rem;
   margin-bottom: 2rem;
@@ -84,12 +84,41 @@ main {
   font-weight: 600;
 }
 
-.blog-content__text-container span {
+.blog-content__text-container a:hover {
+  color: hsl(12, 100%, 89%);
+}
+
+.blog-content__text-container a:hover > img {
+  filter: brightness(165%);
+}
+
+.blog-content__text-container img {
   margin-left: 15px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
+  /* flex - container */
   .section-blog__blog-content {
     flex-wrap: wrap;
+  }
+
+  .section-blog__title-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-blog__title-container p {
+    font-size: 1.5rem;
+  }
+
+  .blog-content__text-container h3 {
+    font-size: 2.5rem;
+  }
+
+  .blog-content__text-container p {
+    font-size: 1.4rem;
+  }
+
+  .blog-content__text-container a {
+    font-size: 1.5rem;
   }
 }
