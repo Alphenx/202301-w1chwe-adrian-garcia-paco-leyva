@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 figure {
   margin-block: 0;
 }
