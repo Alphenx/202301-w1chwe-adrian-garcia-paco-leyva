@@ -8,17 +8,16 @@
 }
 
 .nav-bar {
-  position: fixed;
+  position: absolute;
   font-family: "Rubik", sans-serif;
-
   padding: 1rem;
   margin: 0 auto;
-
+  top: 2rem;
   height: 8rem;
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-
+  font-size: 1.5rem;
   align-items: center;
 }
 
