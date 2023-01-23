@@ -8,6 +8,7 @@
 }
 
 .nav-bar {
+  position: fixed;
   font-family: "Rubik", sans-serif;
 
   padding: 1rem;
