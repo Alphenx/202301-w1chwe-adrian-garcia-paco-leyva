@@ -1,19 +1,9 @@
-/* font-family: 'Playfair Display', serif; */
-/* font-family: 'Rubik', sans-serif; */
-
-/* @media (min-width: 375px) {
-
-} */
-
-main {
-  padding: 4%;
-}
-
 /* SECCION - BLOG */
 
 .section-blog {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 4%;
 }
 
 .section-blog__title-container {
@@ -100,6 +90,10 @@ main {
   /* SECCION - BLOG */
 
   /* flex - container */
+  .section-blog {
+    margin-top: 12rem;
+  }
+
   .section-blog__blog-content {
     flex-wrap: wrap;
   }
