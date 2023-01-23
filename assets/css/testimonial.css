@@ -73,12 +73,21 @@
   background-color: #ff7757;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .traveler-exp-container__title-container h2 {
     font-size: 2.5rem;
   }
 
   .traveler-exp-container__title-container p {
     font-size: 1.5rem;
+  }
+
+  .traveler-exp-container__opinions-container {
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  .traveler-exp-container__nav-arrows-container {
+    justify-content: center;
   }
 }
